@@ -40,33 +40,33 @@
 <body>
 	
 	<div class="container" style="padding:10px;">
-		<div class="dropdown">
-			
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-				<span class="dropdown-selected"></span>
+		<div class="dropdown dropdown-daterange">
+
+			<button class="btn btn-default dropdown-toggle dropdown-toggle-daterange" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+				<span class="dropdown-selected" id="DropdownSelectedDaterange"></span>
 				<span class="caret"></span>
 			</button>
-			
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-preset="Today">Today</a></li>
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-preset="Yesterday">Yesterday</a></li>
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-preset="Last 7 days">Last 7 days</a></li>
 				<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#" data-preset="Last 30 days">Last 30 days</a></li>
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-preset="This month">This month</a></li>
 				<li class="custom-range" role="presentation"><a role="menuitem" tabindex="-1" href="#" data-preset="Custom Range">Custom Range</a>
-					<div class="input input-from-date"><label for="fromDate">From:</label> <input id="fromDate" type="date" value="" /></div>
-					<div class="input"><label for="toDate">To:</label> <input id="toDate" type="date" value="" /></div>
+					<div class="input input-from-date"><label for="DropdownDaterangeFrom">From:</label> <input id="DropdownDaterangeFrom" type="date" value="" /></div>
+					<div class="input"><label for="DropdownDaterangeTo">To:</label> <input id="DropdownDaterangeTo" type="date" value="" /></div>
 					<div class="actions">
 						<a class="btn btn-default" href="#">Apply</a>
 						<a class="btn btn-default cancel" href="#">Cancel</a>
 					</div>				
 				</li>
 			</ul>	
-					
-		</div>			
+		
+		</div>				
 	</div>
 	
-	<script>//document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	
 </body>
 </html>

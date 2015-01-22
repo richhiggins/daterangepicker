@@ -3,18 +3,21 @@
 	$.fn.dateRangePicker = function(config, callback){				
 		var isFallbackPicker = false;
 		
-		var $dropdown = $('.dropdown');
-		var $toggle = $('.dropdown-toggle');
-		var $selected = $('.dropdown-selected');
+		var $dropdown = $('.dropdown-daterange');
+		var $toggle = $('.dropdown-toggle-daterange');
 		var $anchors = $('.dropdown-menu a').not('.action-cancel');
 		var $parents = $('.dropdown-menu li');
-		var $fromDate = $('#fromDate');
-		var $toDate = $('#toDate');
+		var $selected = $('#DropdownSelectedDaterange');
+		var $fromDate = $('#DropdownDaterangeFrom');
+		var $toDate = $('#DropdownDaterangeTo');
 		
 		// stop propagation (so that dropdown persists)
 		$('body').bind('click',function(e){
 			if($dropdown.hasClass('open')){
 				e.stopPropagation();	
+				
+				if(!$(e.target).is('.dropdown-menu *') && !$(e.target).is('.day') && !$(e.target).is('.year') && !$(e.target).is('.month'))
+					$toggle.dropdown('toggle');
 			}
 		});
 		
