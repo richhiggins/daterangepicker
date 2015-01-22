@@ -1,0 +1,42 @@
+.dropdown .btn{
+	width:100%;
+	text-align:right;
+	font-size:16px;
+}
+
+.dropdown-selected{
+	float:left;
+}
+
+.dropdown-menu{
+	width:100%;
+	font-size:16px;
+}
+
+.actions{
+	overflow:hidden;
+	padding:3px 20px;
+}
+
+.actions .btn{
+	float:left;
+	width:auto;
+	margin-right:3px;
+}
+
+.input{
+	display:block;
+	padding:3px 20px;
+}
+
+.input input{
+	display:block;
+	font-size:16px;
+	width:100%;
+	display:block;
+	-webkit-appearance: none;
+}
+
+.input label{
+	display:block;
+}
